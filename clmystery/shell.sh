@@ -10,7 +10,7 @@ grep "Annabel" people | grep -w "F"
 head -40 streets/Hart_Place | tail +40
 head -179 streets/Buckingham_Place | tail +179
 
-cat interviews/interview-47246024  interviews/interview-699607 
+cat interviews/interview-47246024 <(echo '\n') interviews/interview-699607 
 
 # find drivers of matching vehicles
 grep -A 5 "L337..9" vehicles | grep -A 4 "Honda" | grep -A 3 "Blue" | grep -B 1 "6'.\""  | cut -c8- | awk "NR % 3 == 1" > suspects
