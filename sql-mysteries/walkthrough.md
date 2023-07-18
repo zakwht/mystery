@@ -6,7 +6,7 @@ https://github.com/NUKnightLab/sql-mysteries
 
 ---
 
-[**Query 1**](/sql-mysteries/sql.sql#L7C1-L11C22) Get the crime scene report
+[**Query 1**](/sql-mysteries/sql.sql#L7-L11) Get the crime scene report
 
 ```sql
 SELECT description
@@ -20,7 +20,7 @@ SELECT description
 
 ---
 
-[**Query 2**](/sql-mysteries/sql.sql#L15C1-L35C2) Find witnesses and get report transcripts
+[**Query 2**](/sql-mysteries/sql.sql#L15-L35) Find witnesses and get report transcripts
 
 ```sql
 WITH w1 as (
@@ -53,7 +53,7 @@ SELECT id, name, transcript FROM (
 
 ---
 
-[**Query 3**](/sql-mysteries/sql.sql#L40C1-L61C42) Find the suspect that matches witness reports
+[**Query 3**](/sql-mysteries/sql.sql#L40-L61) Find the suspect that matches witness reports
 
 ```sql
 WITH check_ins AS (
@@ -97,7 +97,7 @@ SELECT value FROM solution;
 
 ---
 
-[**Query 4**](/sql-mysteries/sql.sql#L70C1-L72C28) Get the suspect's interview
+[**Query 4**](/sql-mysteries/sql.sql#L70-L72) Get the suspect's interview
 
 ```sql
 SELECT transcript
@@ -109,7 +109,7 @@ SELECT transcript
 
 ---
 
-[**Query 5**](/sql-mysteries/sql.sql#L76C1-L98C35) Find the new susepct
+[**Query 5**](/sql-mysteries/sql.sql#L76-L98) Find the new susepct
 
 ```sql
 WITH licenses AS (
